@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Validation</title>
+    <link rel="stylesheet" href="validate.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+
+      <form name="theform">
+
+        <span class="alias">First name:</span><br>
+        <input type="text" name="fname" id="firstname" class="form-control" onkeyup="checkform()"><span id="msgfirst" class="wrong"></span><br>
+
+        <span class="alias">Last name:</span><br>
+        <input type="text" name="fname" id="lastname" class="form-control" onkeyup="checkform()"><span id="msglast" class="wrong"></span><br>
+
+        <span class="alias">Email:</span><br>
+        <input type="text" id="email" name="fname" class="form-control" onkeyup="checkform()"><span id="msg3" class="wrong"></span><br>
+
+        <span class="alias">Password:</span><br>
+        <input type="password" class="form-control" name="fname" id="psw" onkeyup="checkform()"><span id="msgpassword" class="wrong"></span><br>
+
+        <span class="alias">Confirm password:</span><br>
+        <input type="password" class="form-control" name="fname" id="confirm" onkeyup="checkPassword(), checkform()"><span id="msg5" class="wrong"></span><br><br>
+
+        <input id="btn" type="submit" disabled="disabled" value="Submit" onkeyup="checkform()">
+
+      </form>
+    </div>
+  </div>
+    <script src="validate.js">
+    </script>
+
+  </body>
+</html>
